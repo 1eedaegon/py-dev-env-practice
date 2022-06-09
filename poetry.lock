@@ -1,18 +1,8 @@
-[[package]]
-name = "algorithms"
-version = "0.1.4"
-description = "Pythonic Data Structures and Algorithms"
-category = "main"
-optional = false
-python-versions = "*"
+package = []
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.6"
-content-hash = "cb0c5fc4c1219b0c1918ccba0e73d859f5206c6a130d597bfdcba0b28961b6d4"
+python-versions = "^3.9"
+content-hash = "ce2aa767160f871dd3652615ba0a0dceb7733d62eb8cb4665b87f30a562e3adf"
 
 [metadata.files]
-algorithms = [
-    {file = "algorithms-0.1.4-py3-none-any.whl", hash = "sha256:ee76609fdf99dc3c6f130f3923b77fc12e8636957791caa89e06743d524b4e15"},
-    {file = "algorithms-0.1.4.tar.gz", hash = "sha256:ccd05e13d4ad169b0061028b16b16e7f67e884d237a8bbff13b354ee5d31f34c"},
-]
