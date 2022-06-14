@@ -6,8 +6,13 @@ authors = ["1eedaegon <d8726243@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+dependency-injector = "^4.39.1"
+PyYAML = "^6.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
+black = {version = "^22.3.0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -15,3 +20,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 run = "py_dev_env_practice.main:main"
+fixture = "data.fixtures:main"
