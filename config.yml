@@ -1,0 +1,4 @@
+finder:
+  csv:
+    path: "data/services.csv"
+    delimeter: ","
