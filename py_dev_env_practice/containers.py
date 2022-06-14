@@ -1,8 +1,9 @@
 """Containers module."""
 
-from dependency_injector import containers
+from dependency_injector import containers, providers
+
+from . import entities
 
 
 class Container(containers.DeclarativeContainer):
-    def hello(self):
-        return
+    movie = providers.Provider(entities.Movie)  # type: ignore
