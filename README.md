@@ -5,16 +5,16 @@ Poetry로 구축한 환경에서 CLI만들기 연습
 ```mermaid
 classDiagram
 	class ServiceLister
-		ServiceLister : +Services_directed_by(director) List[Service]
-		ServiceLister : +Services_released_in(year) List[Service]
+		ServiceLister : +Services_version_by(version) List[Service]
+		ServiceLister : +Services_released_in(name) List[Service]
 	
 	class ServiceFinder
 		ServiceFinder: +find_all() List[Service]
 	
 	class Service
-		Service: +title String
-		Service: +year Int
-		Service: +director String
+		Service: +name String
+		Service: +title Int
+		Service: +version String
 		
 	class CsvServiceFinder
 		CsvServiceFinder: +find_all() List[Service]
