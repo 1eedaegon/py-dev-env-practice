@@ -1,7 +1,7 @@
 """Service entities module."""
 
 
-class ServiceEntity:
+class Service:
     def __init__(self, name: str, timestamp: int, version: str):
         self.name = str(name)
         self.timestamp = int(timestamp)
