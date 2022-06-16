@@ -1,4 +1,8 @@
 finder:
   csv:
     path: "data/services.csv"
-    delimeter: ","
+    delimiter: ","
+  
+  sqlite:
+    path: "data/services.db"
+    

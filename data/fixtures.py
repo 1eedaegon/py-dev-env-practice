@@ -20,7 +20,7 @@ def create_csv(services_data, path):
 
 def create_sqlite(services_data, path):
     with sqlite3.connect(path) as db:
-        db.execute("CREATE TABLE IF NOT EXISTS services (title text, year int, director text)")
+        db.execute("CREATE TABLE IF NOT EXISTS services (name text, timestamp int, version text)")
         db.execute("DELETE FROM services")
         db.executemany("INSERT INTO services VALUES (?,?,?)", services_data)
 

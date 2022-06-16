@@ -3,8 +3,8 @@ from .finders import ServiceFinder
 
 
 class ServiceLister:
-    def __init__(self, serivce_finder: ServiceFinder):
-        self._service_finder = serivce_finder
+    def __init__(self, service_finder: ServiceFinder):
+        self._service_finder = service_finder
 
     def service_version_by(self, version):
         return [service for service in self._service_finder.find_all() if service.version == version]
